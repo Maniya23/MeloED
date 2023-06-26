@@ -1,0 +1,178 @@
+/* Main content */
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(images/background.jpg);
+    background-size: 2000px;
+    /* background: rgb(26, 26, 26); */
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+h1{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, rgba(0,212,255,.5) 27%, rgba(9, 121, 108,.5) 72%);
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 3.5rem;
+}
+
+/* Navigation bar for in page navigation */
+#navbar{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 0rem;
+    top: -100px;
+    transition: top 700ms;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: .5rem;
+    padding: 1rem;
+}
+a:hover{
+    text-decoration:underline;
+    color: orange;
+}
+
+h2{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 3rem;
+    float: left;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    opacity: 0;
+}
+
+.content{
+    position: relative;
+    text-align: justify;
+    margin-top: 70px;
+    padding-left: 15rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    opacity: 0;
+    z-index: 5;
+}
+
+.artists{
+    position: relative;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 500px;
+    width: 600px;
+    border-radius: 50px;
+    opacity: .8;
+}
+
+.artist-list{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style:inside;
+    font-style: italic;
+    transform: translate(625px,-400px);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.artist-list>.artist-list-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+label{
+    position: absolute;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem 0rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+h2, p, label{
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.rows{
+    height: 150px;
+    background-color: black;
+    transition: 2000ms;
+}
+
+#row1{
+    background-image: url(images/electronic.jpg);
+    overflow: hidden;
+}
+#row2{    
+    background-image: url(images/rock.jpg);
+}
+#row3{
+    background-image: url(images/country.jpg);
+}
+#row4{
+    background-image: url(images/pop.jpg);
+}
+
+#row1,#row2,#row3,#row4{
+    background-repeat: no-repeat;
+    background-size: 1700px 1100px;
+    overflow: hidden;
+}
+
+#row1 h2, #row1 p, #row1 ul{
+    color: rgb(157, 170, 211);
+}
+#row2 h2, #row2 p, #row2 ul{
+    color: rgb(183, 193, 203);
+}
+#row3 h2, #row3 p, #row3 ul{
+    color: rgb(207, 191, 191);
+}
+#row4 h2, #row4 p, #row4 ul{
+    color: rgb(255, 255, 255);
+}
+
+#row1-title{
+    overflow: hidden;
+}
+
+#row1-title{margin: 15rem 6rem;}
+#row2-title{margin: 22rem 6rem;}
+#row3-title{margin: 18rem 6rem;}
+#row4-title{margin: 25rem 6rem;}
+
+#back-to-top-btn{
+    position: fixed;
+    width: 50px;
+    left: 95%;
+    bottom: 10px;
+    opacity: .8;
+    z-index: 100;
+    transition: bottom 700ms;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    padding: 12rem 0rem 10rem 0rem;
+    background-image: linear-gradient(90deg, rgba(0,212,255,.8) 27%, rgba(9, 121, 108,.8) 72%);
+}

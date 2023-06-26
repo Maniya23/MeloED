@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="./css/NavBar.css">
+    <!-- Link to get icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>App</title>
+</head>
+
+<body>
+    
+    <!-- Navigation bar -->
+    <div class="top-nav" id="top-nav">
+
+        <img class="logo" src="./images/logo.jpg" alt="MeloEd logo">
+        <ul class="nav-links">
+            <li><a class="links" href="../Student_2/index.html">Home</a></li>
+            <li>
+              <a class="links" href="../Student_2/comment_form/comment_form.html">Comments</a>
+            </li>
+            <li><a class="links" href="../Student_1/Shop/shop.html">Shop</a></li>
+            <li id="active"><a class="links" href="../Student_3/quiz.html">Quiz</a></li>
+            <li><a class="links" href="../Student_4/sitemap.html">Site Map</a></li>
+            <li><a class="links" href="../Student_4/album.html">Gallery</a></li>
+            <li><a class="links" href="../Student_3/StudentDetails.html">About Us</a></li>
+          </ul>
+
+    </div>
+
+    <!--Start screen-->
+    <div class="start-screen">
+        
+        <div class="info-box">
+            <h3>Rules of this Quiz</h3>
+            <p>1. There are total of <b> 10 questions. </b></p>
+            <p>2. You will have only <b> 15 seconds </b>per each question.</p>
+            <p>3. Once you select your answer you can not reselect.</p>
+            <p>4. You can not exit from the quiz once the quiz is started.</p>
+            <p>5. Click on the <b>Start Quiz</b>  button to start the quiz.</p>
+           
+            <button id="start-button">Start Quiz</button>
+        </div>
+
+    </div>
+
+    <!--Display quiz-->
+    <div id="display-container">
+        <div class="header">
+
+            <div class="number-count">
+                <span class="question-number"> 1 of 10 questions </span>
+            </div>
+
+            <div class="timer-div">
+                <div class="icon_clock"><i class="fa fa-clock"></i></div>
+                <span class="time-left"> 15 s </span>
+            </div>
+
+        </div>
+
+        <div id="container">
+            <!-- Question and answers here -->
+        </div>
+
+        <button id="next-button">Next</button>
+    </div>
+
+    <!--display score-->
+    <div class="score-container hide">
+
+        <div class="result-box">
+            <div class="crown"><i class="fa fa-crown"></i></div>
+            <div id="congrats">Congratulations! You completed the quiz.</div>
+            <div id="questions"> Questions </div>
+            <div id="wrong-ans"> wrong answers</div>
+            <div id="skipped">skipped qs</div>
+            <div id="user-score"> Score </div>  
+            <div id="time-taken">time taken</div>
+            <div id="grade">grade</div>
+        </div>  
+
+        <button id="restart">Restart</button>
+        <button id="quit">Quit</button>
+    </div>
+
+    <!--Link to page editor page-->
+    <div id="editor" class="editor">
+        <p>Edited by</p>
+        <a href="student-3.html">Randima Gunaweera</a>
+    </div>
+
+    <script src="./javascript/questions.js"></script>
+    <script src="./javascript/quiz.js"></script>
+
+</body>
+</html>

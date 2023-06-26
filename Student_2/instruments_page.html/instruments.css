@@ -1,0 +1,124 @@
+/* Instruments Page */
+/*back to top button*/
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 25px;
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    opacity: 1;
+    z-index: 99;
+}
+#topBtn:hover{
+    background-color: #ff4d00;
+    color: white;
+    opacity: 1;
+}
+#topBtn>p:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+/*image slideshow*/
+.slideshow{
+    padding-top: 60px;
+    max-width: 1550px;
+}
+.slides{
+    width: 100%;
+    transition: .7s ease;
+}
+
+
+.slideshow-text{
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    color: rgb(240, 240, 240);
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/*instruments content container*/
+.instruments-container {
+    display: grid;
+    margin-top: 815px;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 100px;
+    height: 104rem;
+    width: 1550px; 
+    background-image: url(../images/jr-korpa-O-p6tKWPPig-unsplash.jpg);
+    background-size: cover;
+    
+}
+
+/*instruments content*/
+.instruments {
+    height: 20rem;
+
+}
+.instruments:nth-child(even) {
+    margin-right: 122px;
+}
+.instruments:nth-child(odd) {
+    margin-left: 122px;
+}
+.instruments:nth-child(odd):hover {
+    backdrop-filter: blur(6px);
+    transition: .5s ;
+}
+
+.instruments>img {
+    width: fit-content;
+    max-height: 100%;
+    object-fit: contain;
+    transform: translateX(-100%);
+    transition: .7s;
+    opacity: 0;
+    
+}
+
+.instruments>h2{
+    font-size: 2rem;
+    font-family: "Trirong", serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: lighter;
+    opacity: 1;
+    transform: translateY(200%);    
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+.instruments>p{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0;  
+    transform: translateY(200%);
+    text-align: justify;
+    line-height: 30px;
+}
+
+.instruments>h2, .instruments>p{
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+.footer-container{
+    margin-top: 1760px;
+}
+.editor{
+    top: 184rem;
+}
+

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: rgb(119, 203, 175);   
+}
+
+.header h1{
+    color: rgb(15, 12, 12);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.student-info{
+    margin-top: 0.5cm;
+    padding: 20px;
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #0f0d0d;
+    border-bottom: 1px solid #0f0d0d;
+}
+
+.row{
+    margin-top: 0.5cm;
+    text-align: center;
+    background-color: rgb(119, 203, 175);
+    padding: 20px;
+}
+
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #060505;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#btn:hover{
+    background-color: #104957;
+    border: 1px solid #222;
+    color: #f3f3f3;
+    transform: scale(1.1);
+}
+
+.row .col{
+    padding: 20px;
+}
+
+.col h3{
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.col p{
+    font-size: 19px;
+    padding: 12px;    
+}
+
+.col a{
+    font-size: 19px;
+    
+}

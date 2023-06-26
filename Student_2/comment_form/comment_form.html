@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments Form</title>
+    <link rel="stylesheet" href="comment_form.css">
+    <link rel="stylesheet" href="../root.css">
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <div class="top-nav" id="top-nav">
+        <img class="logo" src="../images/logo2.jpg" alt="MeloEd logo">
+        <ul class="nav-links">
+          <li><a class="links" href="../../Student_2/index.html">Home</a></li>
+          <li id="active">
+            <a class="links" href="../../Student_2/comment_form/comment_form.html">Comments</a>
+          </li>
+          <li><a class="links" href="../../Student_1/Shop/shop.html">Shop</a></li>
+          <li><a class="links" href="../../Student_3/quiz.html">Quiz</a></li>
+          <li><a class="links" href="../../Student_4/sitemap.html">Site Map</a></li>
+          <li><a class="links" href="../../Student_4/album.html">Gallery</a></li>
+          <li><a class="links" href="../../Student_3/StudentDetails.html">About Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- comment form -->
+    <div class="comment-form">
+      
+      <!-- form tag with the functions to happen onsubmit -->
+      <form class="comment-form" onsubmit="openPopup(),sendEmail(); return false;"> 
+
+        <!-- question 1 -->
+        <div id="rating" class="questions">
+        <!-- radio buttons -->
+        <p >1. How satisfied are you with our website today? Choose from 0-10. 0 is extremely dissatisfied and 10 is extremely satisfied.</p>
+        <label>
+          <input id="zero" type="radio" name="rating" value="0" />
+          0
+        </label>
+        <label>
+          <input id="one" type="radio" name="rating" value="1" />
+          1
+        </label>
+        <label>
+          <input id="two" type="radio" name="rating" value="2" />
+          2
+        </label>
+        <label>
+          <input id="three" type="radio" name="rating" value="3" />
+          3
+        </label>
+        <label>
+          <input id="four" type="radio" name="rating" value="4" />
+          4
+        </label>
+        <label>
+          <input id="five" type="radio" name="rating" value="5" />
+          5
+        </label>
+        <label>
+          <input id="six" type="radio" name="rating" value="6" />
+          6
+        </label>
+        <label>
+          <input id="seven" type="radio" name="rating" value="7" />
+          7
+        </label>
+        <label>
+          <input id="eight" type="radio" name="rating" value="8" />
+          8
+        </label>
+        <label>
+          <input id="nine" type="radio" name="rating" value="9" />
+          9
+        </label>
+        <label>
+          <input id="ten" type="radio" name="rating" value="10" />
+          10
+        </label></div>
+        <br>
+        <!-- question 2 textarea -->
+        <div class="questions">
+        <label class="textarea">2. Please could you tell us your reasons for this rating?(required)
+          <textarea id="required" cols="30" rows="4" required></textarea>
+        </label></div>
+        <br>
+        <!-- question 3 selections -->
+        <div class="questions">
+        <label>3. How did you want complete this task today? (optional)</label><br>
+        <select id="questionThree" >
+          <option id="please-select">--Please select--</option>
+          <option id="Phone">Phone</option>
+          <option id="Website">Website</option>
+          <option id="Webchat">Webchat</option>
+          <option id="Social-media">Social media</option>
+          <option id="Email">Email</option>
+        </select></div>
+        <br>
+        <!-- question 4 selections -->
+        <div class="questions">
+        <label>4. If you had to complete this task again, how would you prefer to do it? (optional)</label><br>
+        <select id="questionFour" >
+          <option id="please-select-2">--Please select--</option>
+          <option id="Phone-2">Phone</option>
+          <option id="Website-2">Website</option>
+          <option id="Webchat-2">Webchat</option>
+          <option id="Social-media-2">Social media</option>
+          <option id="Email-2">Email</option>
+        </select></div>
+        <br>
+        <!-- submit button -->
+        <input  id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- thank you message -->
+    <div id="popup-container">
+    <div class="popup">Thank You</div>
+     <button class="ok-btn" onclick = "window.location.href='../index.html';">Ok</button>
+    </div>
+    <div id="popup-overlay"></div>
+    <!-- footer -->
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a class="footer-links" href="../../Student_2/index.html">Home</a></li>
+          <li><a class="footer-links" href="../../Student_3/StudentDetails.html">About Us</a></li>
+          <li><a class="footer-links" href="../../Student_4/sitemap.html">Site Map</a></li>
+          <li>
+          <li><a class="footer-links" href="mailto:senura.20210689@iit.ac.lk">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+          <a class="social-media" href="https://www.instagram.com/"><img src="../images/icons8-instagram.svg" alt=""></a>
+          <a class="social-media" href="https://www.youtube.com/"><img src="../images/icons8-youtube-47.png" alt=""></a>
+          <a class="social-media" href="https://web.facebook.com/login/?_rdc=1&_rdr"><img src="../images/icons8-facebook.svg" alt=""></a>
+      </div>
+    </div>  
+    <!-- link to editor page -->
+    <p class="editor">Created by <a href="../page_editor/page_editor.html">Senura Dineth</a></p>        
+    <script src="comment_form.js"></script>
+  </body>
+</html>

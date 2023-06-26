@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="checkout-form">
+        <!-- Section 1 (Billing) -->
+        <div class="flex-column1">
+            <div class="svg1">
+                <img src="svgs/user.svg" alt="use icon">
+            </div>
+            <h3>Billing Details</h3>
+            <form>
+                <label for="fill-billing1">Full Name</label><br>
+                <input type="text" id = "fill-billing1" name="firstname" placeholder="Tom Lewis" size="23" required><br>
+            </form>
+            <form>
+                <label for="fill-billing2">Email</label><br>
+                <input type="text" id = "fill-billing2" name="email" placeholder="tom@example.com" required><br>
+            </form>
+            <form>
+                <label for="fill-billing3">Address</label><br>
+                <input type="text" id = "fill-billing3" name="address" placeholder="No.25 Field Street" required><br>
+            </form>
+            <form>
+                <label for="fill-billing4">City</label><br>
+                <input type="text" id = "fill-billing4" name="city" placeholder="London" required><br>
+            </form>
+        </div>
+        <!-- Section 2 (Card) -->
+        <div class="flex-column2">
+            <img  class="svg2" src="svgs/card.svg" alt="card icon">
+            <h3>Card Details</h3>
+            <form>
+                <label for="fill-card1">Card number</label><br>
+                <input type="text" id = "fill-card1" name="cname" placeholder="xxxx-xxxx-xxxx-xxxx" size="25" minlength="19" maxlength="19" required><br>
+            </form>
+            <form>
+                <label for="fill-card2">Exp date</label><br>
+                <input type="text" id = "fill-card2" name = "exp"  placeholder="DD/MM" size="4" maxlength="5" minlength="5" required><br>
+            </form>
+            <form>
+                <label for="fill-card3">Code</label><br>
+                <input type="number" id = "fill-card3" name="code" placeholder="xxx" max="999" required><br>
+            </form>
+            <div id = "valid-cards">Acceptable cards: <br>Visa / Mastercard / Paypal</div>
+        </div>
+        <!-- Section 3 (Song) -->
+        <div id="song-info">
+            <div class="flex-column3">
+                <div class="svg3">
+                    <img src="svgs/audio.svg" alt="audio icon">
+                </div>
+                <h3>Song Details</h3>
+                <form>
+                    <label for="fill-song1">Song Name</label><br>
+                    <input type="text" id="fill-song1" name="sname" placeholder="Artist / Title">
+                </form>
+                <form>
+                    <label for="fill-song2">Genre</label><br>
+                    <input type="text" id="fill-song2" name="genre" placeholder="Electronic">
+                </form>
+                <form class = "options">
+                    <label for="fill-song3">Format<br>
+                        <select name="format" class="select-format" id="fill-song3">
+                            <option>.wav</option>
+                            <option>.flac</option>
+                            <option>.mp3</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Checkout buttons -->
+    <div class="btns">
+        <button id = "pay">Proceed to pay</button>
+        <button id="enter-song-info">Custom song</button>
+    </div>
+    <div id = "creator">Created by <br>
+        <a href="../../Editor/index.html" id = "creator-name">Danindu Gunawardena (Page Editor)</a>
+    </div>
+
+    <!-- Purchased message -->
+    <div id="popup-container">
+        <div class="popup">Thank You for purchasing..</div>
+        <a href="../../../Student_2/index.html"><div id = "back-to-home">While you are waiting, feel free to check some Wikis from MeloEd</div></a>
+    </div>
+    <div id="popup-overlay"></div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
+

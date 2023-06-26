@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="shop.css">
+    <link rel = "stylesheet" href="root.css">
+    <title>MeloEd</title>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+    <div class="top-nav" id="top-nav">
+        <img id="logo" src="images/logo2.jpg" alt="logo">
+        <div class="nav-links">
+            <span><a class="links" href="../../Student_2/index.html">Home</a></span>
+            <span><a class="links" href="../../Student_2/comment_form/comment_form.html">Comments</a></span>
+            <span><a id="active" class="links" href="../../Student_1/Shop/shop.html">Shop</a></span>
+            <span><a class="links" href="../../Student_3/quiz.html">Quiz</a></span>
+            <span><a class="links" href="../../Student_4/sitemap.html">Site Map</a></span>
+            <span><a class="links" href="../../Student_4/album.html">Gallery</a></span>
+            <span><a class="links" href="../../Student_3/StudentDetails.html">About Us</a></span>
+        </div>
+    </div>
+
+    <!-- Header with title and category buttons -->
+    <div id = "header">
+        <div>
+            <h1>Physical Goods</h1>
+        </div>
+        <div>
+            <button class="formats">Cassette</button>
+            <button class="formats">Vinyl</button>
+            <button class="formats">CD</button>
+        </div>
+    </div>
+
+    <!-- Items with info -->
+    <main>
+        <div class="item-list">
+            <div class="category">
+                <h2 class="category-name">Quality (Low)</h2>
+                <h3 class="price">£8.00</h3>
+                <img class="items" src="images/cassette1.jpg" alt="https://unsplash.com/photos/LhymUiV3LxI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <div class="item-info">Type: Recordable<br>Material: Plastic<br>Audio quality: 44.1kHz / 16bit</div>
+                <form>
+                    <!-- Displaying quantity selection -->
+                    <label for="user-select1">
+                        <select name="Quantity" class="select-quantity" id="user-select1">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="category">
+                <h2 class="category-name">Quality (Medium)</h2>
+                <h3 class="price">£10.00</h3>
+                <img class="items" src="images/cassette2.jpg" alt="https://unsplash.com/photos/kjNwiW4BjJE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <div class="item-info">Type: Re-recordable<br>Material: Aluminium<br>Audio quality: 48kHz / 24bit</div>
+                <form>
+                    <!-- Displaying quantity selection -->
+                    <label for="user-select2">
+                        <select name="Quantity" class="select-quantity" id="user-select2">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="category">
+                <h2 class="category-name">Quality (High)</h2>
+                <h3 class="price">£15.00</h3>
+                <img class="items" src="images/cassette3.jpg" alt="https://unsplash.com/photos/OhPQta-BIhw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <div class="item-info">Type: Re-recordable<br>Material: Metal<br>Audio quality: 92kHz / 32bit</div>
+                <form>
+                    <!-- Displaying quantity selection -->
+                    <label for="user-select3">
+                        <select name="Quantity" class="select-quantity" id="user-select3">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Displaying Cart (Selected quantities/ Prices) -->
+            <div class="shopping-cart">
+                <div>
+                    <div id = "cart-content">
+                        <h2 id="cart-title">Your Cart</h2>
+                        <div class="cart-quantity">0x</div>
+                        <span class="item-category">Category 1</span>
+                        <div class="cart-price">£0.00</div>
+                        <div class="cart-quantity">0x</div>
+                        <span class="item-category">Category 2</span>
+                        <div class="cart-price">£0.00</div>
+                        <div class="cart-quantity">0x</div>
+                        <span class="item-category">Category 3</span>
+                        <div class="cart-price">£0.00</div>
+                        <div class="cart-quantity">Excluded</div>
+                        <span class="item-category">Express Delivery</span>
+                        <div class="cart-price">£0.00</div>
+                        <h2 id="cart-end">Total</h2>
+                        <div class="cart-price" id="total-price">£0.00</div>   
+                    </div>
+
+                    <input type = "reset" id="btn1" class="button" value="Clear your order">
+                    <button id="btn2" class="button">Place your order</button>
+                </div>
+            </div>
+
+            <!-- Buyer detail forms -->
+            <div class = "fill-buyer-details">
+                <form>
+                    <label for="name-fill">Name:
+                        <input id="name-fill" type="text" name="name" size="25">
+                    </label>
+                </form>
+            </div>
+
+            <div class = "fill-buyer-details">
+                <form>
+                    <label for="contact-fill">Email:
+                        <input id="contact-fill" type="text" name="name" size="25">
+                    </label>
+                </form>
+            </div>
+
+            <div class = "expressD">
+                <form>
+                    <label for="delivery">
+                        Express Delivery
+                        <input type="checkbox" name="expressD" value="£5.00" id="delivery" class="select-quantity">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <span><a class="footer-links" href="../../Student_2/index.html">Home</a></span>
+            <span><a class="footer-links" href="../../Student_3/StudentDetails.html">About Us</a></span>
+            <span><a class="footer-links" href="../../Student_4/sitemap.html">Site Map</a></span>
+            <span><a class="footer-links" href="mailto:danindu.20210645@iit.ac.lk">Contact Us</a></span>
+        </div>
+        <div class="social-media">
+            <a class="social-media" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram"></a>
+            <a class="social-media" href="https://www.youtube.com/"><img src="images/youtube.svg" alt="youtube"></a>
+            <a class="social-media" href="https://web.facebook.com/login/?_rdc=1&_rdr"><img src="images/facebook.svg" alt="facebook"></a>
+            <div id = "creator">Created by <br>
+                <a href="../Editor/index.html" id = "creator-name">Danindu Gunawardena (Page Editor)</a>
+            </div>
+        </div>
+    </div>
+    <script src="shop.js"></script>
+
+</body>
+</html>

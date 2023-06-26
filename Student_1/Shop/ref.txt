@@ -1,0 +1,12 @@
+cassette1 Photo by <a href="https://unsplash.com/@greg_wwm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gregory wong</a> on <a href="https://unsplash.com/photos/LhymUiV3LxI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+cassette2 Photo by <a href="https://unsplash.com/de/@saiharishk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sai Harish</a> on <a href="https://unsplash.com/photos/kjNwiW4BjJE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+cassette3 Photo by <a href="https://unsplash.com/@bitter_fruitt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Morgan Vander Hart</a> on <a href="https://unsplash.com/photos/OhPQta-BIhw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+vinyl1 Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/photos/P_LEitbpCPg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+vinyl2 Photo by <a href="https://unsplash.com/pt-br/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/s/photos/vinyl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+vinyl3 Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/s/photos/vinyl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+cd1<a href="https://www.freepik.com/free-vector/electro-music-album_3601855.htm#query=album%20cover&position=39&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+cd2<a href="https://www.freepik.com/free-vector/electro-music-album_3601853.htm#query=album%20cover&position=34&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+cd3<a href="https://www.freepik.com/free-psd/cd-cover-editable-template-psd-dark-tone-corporate-identity_18983286.htm#query=album%20cover&position=29&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+

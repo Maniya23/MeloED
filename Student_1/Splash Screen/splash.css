@@ -1,0 +1,95 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: 100%;
+    opacity: 1;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    display: none;
+}
+
+#splash-scr{
+    z-index: 1;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+#splash-scr.fadeOut{
+    z-index: 10;
+    opacity: .8;
+    transition: 5s ease-in-out;
+}
+
+.square{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 1;
+}
+
+#square-half1{
+    position: fixed;
+    width: 50%;
+    top: 100%;
+    transition: 1000ms;
+}
+#square-half1.slideUp{
+    width: 50%;
+    top: 0;
+    transition: 1000ms ease;
+}
+#logo-name{
+    margin-top: 25%;
+    color: orange;
+}
+#word1{
+    font-size: 7rem;
+}
+#word2{
+    font-size: 10rem;
+}
+
+
+#square-half2{
+    position: fixed;
+    width: 50%;
+    left: 100%;
+    transition: 1000ms;
+}
+#square-half2.slideLeft{
+    width: 50%;
+    left: 50%;
+    transition: 1000ms ease;
+}
+
+#name-list{
+    margin-top: 25%;
+    font-size: 2rem;
+}
+.student-name{
+    margin-bottom: 4rem;
+    opacity: 0;
+}
+.student-name.slideIn{
+    margin-bottom: 4rem;
+    opacity: 1;
+    transition: 1000ms;
+}
+
+#message{
+    display: none;
+    position: absolute;
+    font-size: 4rem;
+    left: 20%;
+    top: 30%;
+    z-index: -100;
+}

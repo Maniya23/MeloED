@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(18, 17, 17);
+}
+/*question form */
+.questions{
+    display:block ;
+    font-size: 20px;
+    background-color: rgb(240, 128, 23);
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 6px;
+    border-radius: 6px;
+    margin-left: 1rem;
+    box-shadow: 1px 2px 1px 1px rgba(255, 188, 101, 0.5);
+}
+.textarea{
+    display: grid;
+    line-height: 30px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+#required{
+    border-radius: 3px;
+    border: #ffb28c solid 2px;
+    padding: 2px;
+    margin-left: 1rem;
+    font-size: small;
+    font-weight: lighter;
+}
+#questionThree,#questionFour{
+    background-color: #ac644062;
+    border-radius: 3px;
+    border: #ffb28c solid 2px;
+    padding: 2px;
+    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+/* submit button */
+#submit{
+    font-size: 20px;
+    margin: 6px;
+    margin-left: 1rem;
+    border-radius: 6px;
+    color: #FD5602;
+    background-color:#FEDEBE;
+    border-color: transparent;
+    padding: 5px;
+
+}
+#submit:hover{
+    transform: scale(1.1);
+    margin-left: 20px;
+    font-size: 20px;
+    background-color:#FD5602;
+    color: #000000;
+    transition: .6s;
+}
+
+.comment-form{
+    padding: 3rem;
+    padding-right: 7rem;
+    padding-top: 2.5rem;
+}
+
+/*popup*/
+#popup-container{
+    background-color: aliceblue;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 11rem;
+    border-radius: 5px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    border-bottom: 4px solid #FD5602;
+    border-top: 4px solid #FD5602;
+    display: none;
+    z-index: 5;
+}
+
+.popup{
+    font-size: 40px;
+    padding-left: 7rem;
+    padding-top: 4rem;
+    font-weight: bold;
+}
+.ok-btn{
+    margin-left: 11.5rem;
+    margin-top: 2.3rem;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FD5602;
+    padding: 4px;
+}
+
+#popup-overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    background:#fffefe;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+  }
+
+
+  .editor{
+    top: 940px;
+}

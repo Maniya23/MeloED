@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Vollkorn&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: 'Vollkorn', serif;
+    scroll-behavior: smooth;
+} 
+
+.container{    
+    width: 100%;
+    height: 100vh;   
+    background-image: linear-gradient(rgba(77, 63, 35, 0.7), rgba(10, 8, 3, 0.7)), url("../images/disc.jpg");    
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+
+.text_box{
+    width: 90%;
+    color: rgb(248, 245, 245);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text_box h1{
+    font-size: 50px;
+}
+
+.text_box p{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;    
+    color: rgb(246, 239, 239);
+}
+
+.explore{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.explore:hover{
+    background-color: #f09013;
+    border: none;
+    color: #0e0e0e;
+    font-weight: 500;
+    transform: scale(1.1);
+}
+
+.history{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-inline: 3cm;   
+}
+
+.history h1{    
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0.7cm;
+}
+
+p{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.row{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.col{
+    width: 350px;
+    height: 220px;
+    display: inline-block;   
+    box-sizing: border-box;  
+    margin: 15px 15px;
+    box-shadow: 0 0 0 1px #bfd0d8;   
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.8s;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.body{
+    background-color: #f3e2b8;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.body h3{
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    color: black;
+}
+
+.col:hover .body{
+    display: block;
+}
+
+.col:hover{
+    filter: none;
+    transform: scale(1.15);
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);    
+}
+
+
+.col1{
+    background-image: url("../images/medieval.jpg");
+}
+
+.col2{
+    background-image: url("../images/renaissance.jpg");
+}
+
+.col3{
+    background-image: url("../images/Baroque.jpg");
+}
+
+.col4{
+    background-image: url("../images/Classical.jpg");
+}
+
+.col5{
+    background-image: url("../images/Romantic.JPG");
+}
+
+.col6{
+    background-image: url("../images/current.jpg");
+}
+
+.row .read{
+    display: inline-block;
+    text-decoration: none;
+    color: #0e0e0e;
+    border: 1px solid #0b0a0a;
+    padding: 5px 8px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.read:hover{
+    border: none;
+    background-color: #f59e51;
+    transform: scale(1.1);    
+}
+
+.content .section-1{
+    background-color: rgb(246, 196, 103);
+    display: flex;
+    padding: 0.8cm 0.8cm;
+}
+
+.content .paragraph p{
+    margin-inline: 3cm;
+    padding: 15px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.content .section-2{
+    background-color: bisque;
+    padding: 0.8cm 0.8cm;
+    display: flex;
+}
+
+.content h1{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;    
+}
+
+.section-1 .img{
+    margin-block: 3cm;
+    padding-left: 3cm;
+}
+
+.section-2 .img{
+    margin-block: 3cm;
+    padding-right: 3cm;
+}
+
+
+.section-1 .img img{
+    height: 250px;
+    width: 400px;
+}
+
+.section-2 .img img{
+    height: 250px;
+    width: 400px;
+} 
+
+/*style back to top button*/
+.to-top{
+    background: #0f0e0e;    
+    position: fixed;
+    bottom: 15px;
+    right: 32px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
