@@ -401,10 +401,10 @@ li{
 }
 
 .page-editor {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 620px;
-    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 .page-editor a{
@@ -415,6 +415,10 @@ li{
 
 .page-editor a:visited {
     color: white;
+}
+
+.dev-name{
+    color: #ff4d00;
 }
 
 @media (max-width: 768px) {
